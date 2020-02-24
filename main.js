@@ -4,7 +4,7 @@
 async function getWeather(event){
     const cityName=document.getElementById("cityName").value;
     //console.log(cityName)
-    const url="http://api.openweathermap.org/data/2.5/weather?q="+ cityName +"&appid=3cd9030089f3276549b644a70aa6c30d";
+    const url="https://api.openweathermap.org/data/2.5/weather?q="+ cityName +"&appid=3cd9030089f3276549b644a70aa6c30d";
     //console.log(url)
     const response = await fetch(url);
     const weatherData = await response.json();
