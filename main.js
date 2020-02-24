@@ -12,5 +12,5 @@ async function getWeather(event){
     
     const weatherResult=document.getElementById("result");
     weatherResult.style.textTransform = "lowercase";
-    weatherResult.innerHTML=`<p>The weather in ${cityName} is currently ${weatherData.weather[0].main}</p>`
+    weatherResult.innerHTML=`<p>It's definitely weather. ${cityName} is currently ${weatherData.weather[0].main}</p>`
 }
